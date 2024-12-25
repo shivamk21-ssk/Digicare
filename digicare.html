@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>DigiCare - Health Status and Wellness</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f7fc;
+        }
+        header {
+            background-color: #007bff;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        header p {
+            font-size: 1.2em;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .section {
+            margin: 20px 0;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        h2 {
+            color: #007bff;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        label {
+            margin: 10px 0 5px;
+        }
+        input, textarea {
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            background-color: #007bff;
+            color: white;
+            padding: 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>DigiCare</h1>
+    <p>Your health, our priority - Personalized health status and wellness tracking</p>
+</header>
+
+<div class="container">
+    <!-- About Us Section -->
+    <div class="section">
+        <h2>About DigiCare</h2>
+        <p>DigiCare is a platform dedicated to tracking your health status and offering personalized wellness advice. We collect detailed information from users and provide insights on improving their daily life. Our goal is to help you take control of your health and make informed decisions for a healthier future.</p>
+    </div>
+
+    <!-- Health & Lifestyle Form Section -->
+    <div class="section">
+        <h2>Health & Lifestyle Form</h2>
+        <p>Please fill out the form below to receive your personalized health status and recommendations:</p>
+        <form id="healthForm">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="age">Age</label>
+            <input type="number" id="age" name="age" required>
+
+            <label for="gender">Gender</label>
+            <select id="gender" name="gender" required>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select>
+
+            <label for="healthConditions">Do you have any health conditions?</label>
+            <textarea id="healthConditions" name="healthConditions" rows="4" placeholder="e.g., diabetes, hypertension"></textarea>
+
+            <label for="dailyExercise">How many hours do you exercise per week?</label>
+            <input type="number" id="dailyExercise" name="dailyExercise" required>
+
+            <label for="diet">How would you describe your diet?</label>
+            <textarea id="diet" name="diet" rows="4" placeholder="e.g., vegetarian, balanced, high-protein"></textarea>
+
+            <label for="sleep">How many hours do you sleep on average per night?</label>
+            <input type="number" id="sleep" name="sleep" required>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2024 DigiCare. All Rights Reserved | Contact us at info@digicare.com</p>
+</footer>
+
+</body>
+</html>
